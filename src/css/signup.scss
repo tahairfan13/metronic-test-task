@@ -1,0 +1,242 @@
+@import "../colors";
+
+a {
+  color: #2884ef;
+  text-decoration: none;
+}
+button {
+  border: none;
+  display: inline-flex;
+  gap: 8px;
+  background: #3e97ff;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 6px;
+  justify-content: center;
+  cursor: pointer;
+}
+p {
+  margin: 0;
+}
+
+.signup {
+  display: flex;
+  height: 100vh;
+}
+.progress-bar {
+  color: #ffffff;
+  background-color: #006cea;
+  width: 30%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .vector1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .vector2 {
+    position: absolute;
+    top: 50px;
+    right: -230px;
+  }
+  .vector3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .vector4 {
+    position: absolute;
+    bottom: 0;
+    right: -480px;
+  }
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  img:nth-child(2) {
+    margin-left: -3px;
+  }
+}
+
+// .progress-buttons-container{}
+.connector {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  span {
+    height: 45px;
+    display: flex;
+    width: 0;
+    border-left: 1px dashed rgba(255, 255, 255, 0.3);
+  }
+}
+.progress-btn {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  .box {
+    width: 47px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  .active {
+    border: 1px solid #50cd89;
+    background-color: #50cd89;
+  }
+  .in-active {
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .text {
+    p {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    span {
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+}
+.progress-bar-footer {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #50cd89;
+}
+
+// |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| //
+
+.progress-panel {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .heading {
+    text-align: center;
+    p {
+      color: $darkBlue;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    span {
+      color: $lightGray;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+.account-type {
+  display: grid;
+  gap: 35px;
+  .select-boxes {
+    display: flex;
+    gap: 20px;
+  }
+  .box {
+    display: flex;
+    gap: 16px;
+    border-radius: 8px;
+    padding: 24px;
+  }
+  .active {
+    border: 1px #2884ef dashed;
+    background: #eef6ff;
+  }
+  .in-active {
+    border: 1px #d8d8e5 dashed;
+    // background: #A1A5B7;
+  }
+  .text {
+    p {
+      font-size: 15px;
+      font-weight: 600;
+    }
+    span {
+      color: $darkGray;
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+  .button-container {
+    display: flex;
+    justify-content: end;
+  }
+}
+.personal-info {
+  display: grid;
+  gap: 16px;
+  .third-party-buttons {
+    display: flex;
+    gap: 10px;
+    button {
+      border: none;
+      background: white;
+      color: $darkGray;
+
+      border-radius: 6px;
+      border: 1px #e1e3ea solid;
+      align-items: center;
+      gap: 12px;
+      display: inline-flex;
+      padding: 12px;
+      flex: 1;
+    }
+  }
+  .divider {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: $lightGray;
+    gap: 10px;
+    p {
+      background: #eff2f5;
+      height: 2px;
+      width: 35%;
+    }
+  }
+  .input-container {
+    display: flex;
+    gap: 20px;
+  }
+  input {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    border: 1px #e1e3ea solid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+    outline: none;
+  }
+  .checkbox-container {
+    display: flex;
+    gap: 10px;
+    color: #5e6278;
+  }
+  .have-account {
+    color: $lightGray;
+    text-align: center;
+  }
+}

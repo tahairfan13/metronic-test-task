@@ -1,0 +1,228 @@
+@import "../colors";
+
+.home {
+  background-color: #e1e3ea;
+  min-height: 100vh;
+  height: auto;
+}
+.flex {
+  display: flex;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-bottom: 1px #e1e3ea solid;
+  display: flex;
+  .navbar-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    img {
+      border-radius: 50%;
+    }
+    .notification-badge {
+      background-color: red;
+      color: white;
+      font-size: 17px;
+      padding: 3px;
+      border-radius: 50%;
+      margin-top: -23px;
+      margin-left: -13px;
+    }
+  }
+}
+
+.sidebar {
+  min-height: calc(100vh - 92px);
+  width: 20%;
+  background-color: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-right: 1px #e1e3ea solid;
+  button {
+    background-color: #ffffff;
+    color: #5e6278;
+    width: 100%;
+    justify-content: start;
+    font-weight: 600;
+    font-size: 15px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .active {
+    background-color: #eef6ff;
+    color: #3e97ff;
+  }
+}
+.panel {
+  padding: 30px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .first-row {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+  }
+  .top-select {
+    width: 160px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+  }
+  .counter-buttons-container {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+  }
+  .counter-btn {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    border-bottom: 3px solid;
+    border-color: #ffffff;
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 40px;
+      .icon {
+        font-size: 30px;
+        // stroke-width: 1px;
+        padding: 5px;
+        border-radius: 5px;
+        margin-top: -15px;
+      }
+    }
+    p {
+      color: $darkBlue;
+      font-size: 34px;
+      font-weight: 600;
+    }
+    span {
+      color: $gray;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .table-container {
+    border-radius: 12px;
+
+    background-color: #ffffff;
+    padding: 20px;
+    .table-header {
+      display: flex;
+      justify-content: space-between;
+    }
+    .searchbar {
+      display: flex;
+      border-radius: 10px;
+      align-items: center;
+      padding: 0 10px;
+      width: 220px;
+      gap: 20px;
+      background-color: #f9f9f9;
+      height: 40px;
+      font-weight: 600;
+    }
+    .searchbar-input {
+      border: none;
+      outline: none;
+      width: 100%;
+      background-color: transparent;
+      column-rule-color: gray;
+    }
+    .filters {
+      display: flex;
+      gap: 20px;
+      .export-btn {
+        color: #3e97ff;
+        background-color: #3e98ff30;
+        height: 40px;
+        display: flex;
+        align-items: center;
+      }
+      .export-icon {
+        margin-top: 3px;
+      }
+    }
+    .select {
+      width: 160px;
+      background-color: #f9f9f9;
+      color: black;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 40px;
+    }
+    thead {
+      text-transform: uppercase;
+      th {
+        color: #a1a5b7;
+      }
+    }
+    .id {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .gray {
+      color: #7e8299;
+    }
+    .blue {
+      color: #181c32;
+      font-weight: 600;
+    }
+    .action-btn {
+      height: 20px;
+      display: flex;
+      align-items: center;
+      width: 80px;
+      font-weight: normal;
+      font-size: 10px;
+      font-weight: 600;
+      border-radius: 4px;
+    }
+    .success {
+      color: #50cd89;
+      background-color: #50cd8831;
+    }
+    .error {
+      color: #f1416c;
+      background-color: #f1416c31;
+    }
+    .table-footer {
+      display: flex;
+      justify-content: space-between;
+      button {
+        color: #a1a5b7;
+        background-color: #f9f9f9;
+      }
+      .paginationbar {
+        .page-link {
+          border: 0;
+          border-radius: 5px;
+          color: #3e97ff;
+        }
+        .active > .page-link {
+          background-color: #3e97ff;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.dropdown-toggle::after {
+  display: none;
+}
